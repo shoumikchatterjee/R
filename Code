@@ -7,8 +7,9 @@ T = matrix( c(15, 6, 9, 10, 30, 7, 11, 18), nrow = 2, ncol = 4, byrow = TRUE) # 
 teen <- c(13, 18, 16)
 youngadult <- c(26, 33, 22, 27, 30, 23)
 binary <- c(FALSE, TRUE, TRUE)
+F <- factor(youngadult) # converts the youngadult vector to a factor
+B <- factor(binary, levels = c(0, 1), order = TRUE) # converts the binary vector to a factor with FALSE, TRUE having values of 0, 1
 N <- array(c(teen, youngadult), dim = c(3,3,2)) # creates an array of two 3X3 matrices
 D <- data.frame(flavor, teen, binary)  # creates a data frame with three columns
-# factors, functions
 # charts, graphs
 # statistics
