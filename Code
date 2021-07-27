@@ -3,7 +3,7 @@ x <- 5  #assigns numeric 5 to variable x
 y <- 5L #assigns integer 5 to variable y
 flavor <- c("vanilla", "chocolate", "raspberry")  # creates a vector with three elements
 listrandom <- list(10, "bicycle", FALSE)  # creates a list with three elements of different types
-T = matrix( c(15, 6, 9, 10, 30, 7, 11, 18), nrow = 2, ncol = 4, byrow = TRUE) # creates a matrix of 8 elements with 2 rows and 4 columns
+T = matrix(c(15, 6, 9, 10, 30, 7, 11, 18), nrow = 2, ncol = 4, byrow = TRUE) # creates a matrix of 8 elements with 2 rows and 4 columns
 teen <- c(13, 18, 16)
 youngadult <- c(26, 33, 22, 27, 30, 23)
 binary <- c(FALSE, TRUE, TRUE)
