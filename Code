@@ -3,7 +3,8 @@ x <- 5  #assigns numeric 5 to variable x
 y <- 5L #assigns integer 5 to variable y
 flavor <- c("vanilla", "chocolate", "raspberry")  # creates a vector with three elements
 listrandom <- list(10, "bicycle", FALSE)  # creates a list with three elements of different types
-T = matrix(c(15, 6, 9, 10, 30, 7, 11, 18), nrow = 2, ncol = 4, byrow = TRUE) # creates a matrix of 8 elements with 2 rows and 4 columns
+planet <- c("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune")  # creates a vector with eight elements
+moons = matrix(c(0, 0, 1, 2, 63, 56, 21, 13)), nrow = 2, ncol = 4, byrow = TRUE) # creates a matrix of 8 elements with 2 rows and 4 columns
 teen <- c(13, 19, 16)
 youngadult <- c(26, 33, 22, 27, 30, 23)
 binary <- c(FALSE, TRUE, TRUE)
@@ -14,10 +15,10 @@ D <- data.frame(flavor, teen, binary)  # creates a data frame with three columns
 
 # charts, graphs
 png(file = "teen_icecream.png")
-pie(x = teen, labels = flavor, main = "Teen Ice Cream Choices", col = viridis(length(x))) # creates colored pie chart of teen ice cream flavor preferences 
+pie(x = teen, labels = flavor, main = "Teen Ice Cream Choices", col = viridis(length(x))) # plots colored pie chart showing teen ice cream flavor preferences
 
-png(file = "barchart.png")
-barplot(T)
+png(file = "PlanetMoons.png")
+barplot(moons, names.arg = planet, xlab = "Planet", ylab = "No. of Moons",  main = "Planets and Moons", col = colors)  # plots colored bar chart showing each planet with moons
 
 # statistics
 result.mean <- mean(teen)
