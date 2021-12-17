@@ -13,6 +13,11 @@ N <- array(c(teen, youngadult), dim = c(3,3,2)) # creates an array of two 3X3 ma
 D <- data.frame(flavor, teen, binary)  # creates a data frame with three columns
 
 # charts, graphs
+png(file = "teen_icecream.png")
+pie(x = teen, labels = flavor, main = "Teen Ice Cream Choices", col = viridis(length(x))) # creates colored pie chart of teen ice cream flavor preferences 
+
+png(file = "barchart.png")
+barplot(T)
 
 # statistics
 result.mean <- mean(teen)
